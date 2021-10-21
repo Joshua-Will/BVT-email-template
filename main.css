@@ -235,6 +235,8 @@ used to keep them on opposite sides */
 }
 
 
+/* media queries */
+
 @media (max-width: 991px) {
     .email-profile {
         justify-content: space-between;
