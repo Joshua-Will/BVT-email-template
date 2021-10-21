@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="./main.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+
+
+            <!-- left/top/first column -->
+
+            <nav class="col col-lg-2 nav-column">
+                <div class="email-profile">
+                    <div>
+                        <img src="./images/profile-pic.png" id="profile-pic" alt="profile picture" width="40px">
+                        <h4 id="welcome-name">Welcome, Dwight!</h4>
+                    </div>
+                    <button type="button" class="d-lg-none navbar-toggle" data-toggle="collapse"
+                        data-target="#nav-collapse" aria-expanded="false" aria-label="Toggle navbar">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="30" height="30"
+                            focusable="false">
+                            <title>Menu</title>
+                            <path stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10"
+                                d="M4 7h22M4 15h22M4 23h22">
+                            </path>
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="collapse navbar-collapse" id="nav-collapse">
+                    <!-- everything from HERE -->
+                    <div class="btn-compose">
+                        <button type="button" class="btn btn-warning">COMPOSE</button>
+                    </div>
+                    <div class="col header-nav-links">
+                        <a href="#" class="nav-links nav-link-selected">Inbox (1)</a>
+                        <a href="#" class="nav-links">Tagged</a>
+                        <a href="#" class="nav-links">Important</a>
+                        <a href="#" class="nav-links">Sent Mail</a>
+                        <a href="#" class="nav-links">Drafts</a>
+                        <a href="#" class="nav-links">Trash</a>
+                    </div>
+                    <!-- to HERE is collapsable-->
+                </div>
+            </nav>
+
+
+
+            <!-- middle/2nd column.  "inbox" -->
+            <div class="col col-md-12 col-lg-3 email-titles">
+
+
+                <!-- search bar -->
+                <input type="text" class="email-search" placeholder="search emails">
+
+                <!-- email cards -->
+                <div class="card">
+                    <a href="#" class="card-link">
+                        <div class="subject-header">
+                            <h6 class="subject-header-title">LinkedIn</h6>
+                            <h6 class="subject-header-time">01:22pm</h6>
+                        </div>
+                        <p class="truncate">You have (8) new connection requests, get Premium now if you wish to view
+                            them. Without Premium, you can only see the first (2) requests.</p>
+                    </a>
+                </div>
+
+                <div class="card card-selected">
+                    <a href="#" class="card-link">
+                        <div class="subject-header">
+                            <h6 class="subject-header-title">Michael Scott Daily Quotes</h6>
+                            <h6 class="subject-header-time"> Aug 12, 2021</h6>
+                        </div>
+                        <p class="truncate">I'm optomistic because every day I get a little more optomistic about my
+                            chances, which is a bad thing.</p>
+                    </a>
+                </div>
+
+                <div class="card">
+                    <a href="#" class="card-link">
+                        <div class="subject-header">
+                            <h6 class="subject-header-title">Nigerian Prince Needs Help</h6>
+                            <h6 class="subject-header-time">Apr 1, 2021</h6>
+                        </div>
+                        <p class="truncate">Greeting to you my brother. I found you from your email doing search for
+                            you. I am eager to share a proposal with you that would benefit greatly. I am at this time a
+                            prisoner in my own country and have found a way to be not imprision. I will gladly share my
+                            bounty
+                            riches if but you help me.</p>
+                    </a>
+                </div>
+
+            </div>
+
+
+
+
+            <!-- 3rd/right/bottom column.  selected email content -->
+
+            <div class="col-sm-12 col-lg-7 email-content">
+                <div class="email-content-to-from">
+                    <p class="email-to-from">To: kingschrute@dmifflinpa.com</p>
+                    <p class="email-to-from">From: mscott@dmifflinpa.com</p>
+                </div>
+                <div class="email-content-title-header">
+                    <h2 class="email-content-title">Michael Scott Daily Quotes</h2>
+                    <div class="email-content-title-buttons">
+                        <a href="#"><img class="email-header-icons" src="./images/trash.png"></a>
+                        <a href="#"><img class="email-header-icons" src="./images/reply.png"></a>
+                        <a href="#"><img class="email-header-icons" src="./images/menu.png"></a>
+                    </div>
+                </div>
+                <p>"Friends joke with one another. 'Hey, you're poor.' 'Hey, your momma's dead.' That's what friends
+                    do."</p>
+                <p>"It's a good thing Russia doesn't exist anymore."</p>
+                <p>"You cheated on me? When I specifically asked you not to?"</p>
+                <p>"It just seems awfully mean. But sometimes, the ends justify the mean."</p>
+                <p>"Reverse psychology is an awesome tool. I don't know if you guys know about it, but, basically, you
+                    make someone think the opposite of what you believe, and that tricks them into doing something
+                    stupid. Works like a charm."</p>
+                <div class="text-field" contenteditable="true">
+                </div>
+                <div class="reply-icons">
+                    <a href="#"><img src="./images/attach.png" alt="attach" width="38px"></a>
+                    <button type="button" class="btn btn-outline-warning button-reply">REPLY</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

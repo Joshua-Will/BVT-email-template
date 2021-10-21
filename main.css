@@ -1,0 +1,257 @@
+body, html {
+    margin: 0px;
+}
+
+.row {
+    height: 100vh;
+}
+
+
+/* Pseudo Classe styles for main nav links and email cards*/
+
+.card-link:hover {
+    color: black;
+    font-weight: normal;
+    background-color: white;
+    box-shadow: 6px 6px 5px 0px rgba(0,0,0,0.75);
+}
+
+.card-link:link {
+    color: black;
+}
+
+.card-link:visited {
+    color: black;
+}
+
+.nav-links:hover {
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+.nav-links:link {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-links:visited {
+    color: white;
+}
+
+
+/* Class Styles */
+
+/* div containing compose button.  used to center the button*/
+.btn-compose {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    /* margin-right: 15%; */
+    
+}
+
+/* actual compose button */
+.btn-warning {
+    margin-top: 2em;
+    width: 65%;
+    min-width: 110px;
+    font-size: 12pt;
+    color: white;
+    padding: .1em;
+    margin-bottom: 3em;
+}
+
+/* reply button */
+.button-reply {
+    margin-right: 11px;
+}
+
+
+/* card styles for emails */
+.card {
+    background-color: rgba(29, 24, 22, .02);
+    margin: 1em 0em 1em 0em;
+    box-shadow: 6px 6px 5px 0px rgba(0,0,0,0.05);
+    padding: 1%;
+}
+
+/* the "selected" email style that is different */
+.card-selected {
+    background-color: white;
+    box-shadow: 6px 6px 5px 0px rgba(0, 0, 0, 0.315);
+}
+
+/* the div containing "trash" "reply" and "menu" buttons on the opened email */
+.email-content-title-buttons {
+    display: flex;
+    align-items: baseline;
+}
+
+/* the opened email section just below the "to" and "from" */
+.email-content-title-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2em;
+}
+
+/* the opened email "to" and "from" header */
+.email-content-to-from {
+    display: flex;
+    flex-direction: column;
+    margin-top: .8em;
+    margin-bottom: 3em;
+}
+
+/* the leftmost/top div containing "welcome" and the main nav links */
+.nav-column {
+    background-color: rgba(29, 24, 22, .84);
+    color: white;
+}
+
+/* the "trash" "reply" and "menu" icons img properties */
+.email-header-icons {
+    height: auto;
+    width: 18px;
+    margin-right: 15px;
+}
+
+/* div containing profile pic and "welcome" */
+.email-profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+
+
+
+/* search field */
+.email-search {
+    border: none;
+    margin-top: 1em;
+    margin-left: .2em;
+    width: 100%
+}
+
+/* middle column */
+.email-titles {
+    background-color: rgba(29, 24, 22, .07);
+    
+}
+
+/* opened email "to" and "from" text styles */
+.email-to-from {
+    margin: 0px;
+    font-size: small;
+}
+
+/* div containing just the nav links in column 1 */
+.header-nav-links {
+    display: flex;
+    flex-direction: column;
+    font-size: 14pt;
+    margin-left: 1.2em;
+}
+
+/* div containing "attach" icon and reply button
+used to keep icon and button on opposite ends of the div */
+
+.reply-icons {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* class controlling middle column title and dates
+used to keep them on opposite sides */
+.subject-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* middle column email title */
+.subject-header-title {
+    font-weight: bolder;
+}
+
+/* editable div for composing the email */
+.text-field {
+    min-height: 20%;
+    max-height: max-content;
+    width: 100%;
+    border: solid;
+    border-width: 2px;
+    margin-top: 8vh;
+    margin-bottom: 15px;
+}
+
+/* to make the middle column email previews always fit the box */
+.truncate {
+    max-width: max-content;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* navbar toggle button */
+.navbar-toggle {
+    background-color: rgba(61, 48, 43, 0.84);
+    color: white;
+    box-shadow: 6px 6px 5px 0px rgba(0,0,0,0.05);
+}
+
+/* div containing search bar */
+.nav-bar-search {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* styling for the nav links in column 1 */
+.nav-links {
+    margin-bottom: 20px;
+    font-weight: lighter;
+}
+
+/* styling for the "selected" nav link in column 1 */
+.nav-link-selected {
+    font-weight: bolder;
+    font-size: 110%;
+}
+
+
+/* ID styles */
+#profile-pic {
+    float: left;
+    margin-right: 10px;
+}
+
+
+#welcome-name {
+    font-size: 11pt;
+}
+
+
+@media (max-width: 991px) {
+    .email-profile {
+        justify-content: space-between;
+    }
+
+    .nav-column {
+        position: fixed;
+        z-index: 3;  
+    }
+
+    .email-search {
+        margin-top: 79px;
+    }
+}
+
+@media (min-width: 992px) {
+    .navbar-collapse {
+        display: block !important;
+    }
+}
