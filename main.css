@@ -3,9 +3,7 @@ body, html {
 }
 
 
-.row {
-    height: 100vh;
-}
+
 
 
 /* Pseudo Classe styles for main nav links and email cards*/
@@ -82,6 +80,7 @@ body, html {
 .card-selected {
     background-color: white;
     box-shadow: 6px 6px 5px 0px rgba(0, 0, 0, 0.315);
+    padding: 1%;
 }
 
 /* the div containing "trash" "reply" and "menu" buttons on the opened email */
@@ -258,5 +257,9 @@ used to keep them on opposite sides */
 @media (min-width: 992px) {
     .navbar-collapse {
         display: block !important;
+    }
+
+    .row {
+        height: 100vh;
     }
 }
