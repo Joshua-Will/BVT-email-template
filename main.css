@@ -2,6 +2,7 @@ body, html {
     margin: 0px;
 }
 
+
 .row {
     height: 100vh;
 }
@@ -247,6 +248,10 @@ used to keep them on opposite sides */
 
     .email-search {
         margin-top: 79px;
+    }
+
+    .row {
+        height: max-content;
     }
 }
 
