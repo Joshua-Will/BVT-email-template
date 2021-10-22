@@ -132,6 +132,7 @@ body, html {
 /* search field */
 .email-search {
     border: none;
+    border-top: solid 4px goldenrod;
     margin-top: 1em;
     margin-left: .2em;
     width: 100%
@@ -263,5 +264,9 @@ used to keep them on opposite sides */
 
     .row {
         height: 100vh;
+    }
+
+    .email-search {
+        border: none;
     }
 }
